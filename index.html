@@ -18,7 +18,7 @@
       name="description"
       content="Kabata Soft: desarrollo de software a medida, inteligencia artificial aplicada, células de desarrollo dedicadas y consultoría tecnológica. Transformamos procesos complejos en ventajas competitivas."
     />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
     <meta name="author" content="Kabata Soft S.A." />
     <link rel="canonical" href="https://www.kabatasoft.com/" />
 
@@ -46,25 +46,115 @@
     />
     <meta name="twitter:image" content="https://www.kabatasoft.com/og-image.png" />
 
-    <!-- Datos estructurados para Google -->
+    <!-- Datos estructurados: la organización (el mismo @id que usa kbspec.kabatasoft.com),
+         el sitio y los servicios que la página describe. -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Kabata Soft",
-        "legalName": "Kabata Soft S.A.",
-        "url": "https://www.kabatasoft.com/",
-        "logo": "https://www.kabatasoft.com/og-image.png",
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.kabatasoft.com/#org",
+      "name": "Kabata Soft",
+      "legalName": "Kabata Soft S.A.",
+      "url": "https://www.kabatasoft.com/",
+      "logo": "https://www.kabatasoft.com/logo-mountains.png",
+      "image": "https://www.kabatasoft.com/og-image.png",
+      "email": "contacto@kabatasoft.com",
+      "description": "Desarrollo de software a medida, inteligencia artificial aplicada, células de desarrollo dedicadas y consultoría tecnológica.",
+      "contactPoint": {
+        "@type": "ContactPoint",
         "email": "contacto@kabatasoft.com",
-        "description": "Desarrollo de software a medida, inteligencia artificial aplicada, células de desarrollo dedicadas y consultoría tecnológica.",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "email": "contacto@kabatasoft.com",
-          "contactType": "sales",
-          "availableLanguage": ["es", "en"]
+        "contactType": "sales",
+        "availableLanguage": [
+          "es",
+          "en"
+        ]
+      },
+      "knowsAbout": [
+        "Desarrollo de software",
+        "Inteligencia artificial",
+        "Agentes de IA",
+        "Automatización de procesos",
+        "Consultoría tecnológica"
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Desarrollo de software a medida",
+            "description": "Plataformas web, móviles y sistemas empresariales diseñados alrededor de los procesos del cliente.",
+            "provider": {
+              "@id": "https://www.kabatasoft.com/#org"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Células de desarrollo dedicadas",
+            "description": "Talento senior que se integra a los equipos del cliente con su metodología y sus herramientas.",
+            "provider": {
+              "@id": "https://www.kabatasoft.com/#org"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Consultoría en tecnología",
+            "description": "Arquitectura, stack y hoja de ruta tecnológica para la operación del cliente.",
+            "provider": {
+              "@id": "https://www.kabatasoft.com/#org"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Evolución y soporte continuo",
+            "description": "Mantenimiento proactivo, monitoreo y mejora constante de los sistemas.",
+            "provider": {
+              "@id": "https://www.kabatasoft.com/#org"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Inteligencia artificial aplicada",
+            "description": "Automatización inteligente, agentes y copilotos empresariales, y analítica con datos, integrados en los flujos de trabajo de la empresa.",
+            "provider": {
+              "@id": "https://www.kabatasoft.com/#org"
+            }
+          }
         }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.kabatasoft.com/#sitio",
+      "name": "Kabata Soft",
+      "url": "https://www.kabatasoft.com/",
+      "inLanguage": [
+        "es",
+        "en"
+      ],
+      "publisher": {
+        "@id": "https://www.kabatasoft.com/#org"
       }
+    }
+  ]
+}
     </script>
+    <!-- Sin JavaScript, las secciones animadas se ven igual (no hay texto escondido). -->
+    <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+    <link rel="alternate" type="text/plain" href="https://www.kabatasoft.com/llms.txt" title="llms.txt" />
     <!-- Google Analytics (mismo ID que el sitio en producción) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PWDP1CCRL4"></script>
     <script>
@@ -86,10 +176,35 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="./assets/index-apigYz5Y.js"></script>
+    <script type="module" crossorigin src="./assets/index-VCTc63QS.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-BtZRgnyH.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"><link rel="preload" as="image" href="logo-mountains.png"/><div class="site-content"><header class="nav "><div class="container nav-inner"><a href="#inicio" class="logo" aria-label="Kabata Soft — Inicio"><img class="logo-mtn" src="logo-mountains.png" alt=""/><svg class="logo-svg" viewBox="252 46 388 111" role="img" aria-label="KB Soft"><text x="262" y="155" font-family="&#x27;Archivo&#x27;, &#x27;Instrument Sans&#x27;, sans-serif" font-weight="900" font-size="148" letter-spacing="-4" fill="var(--logo-ink, #141414)">KB</text><text x="508" y="155" font-family="&#x27;Archivo&#x27;, &#x27;Instrument Sans&#x27;, sans-serif" font-weight="800" font-size="54" fill="#c1281e">Soft</text></svg></a><nav aria-label="principal"><ul class="nav-links "><li><a href="#servicios">Servicios</a></li><li><a href="#ia">Enfoque IA</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#clientes">Clientes</a></li><li><a href="#contacto">Contacto</a></li></ul></nav><div class="nav-right"><div class="lang-toggle" role="group" aria-label="Idioma / Language"><button class="is-active" aria-pressed="true">ES</button><button class="" aria-pressed="false">EN</button></div><button class="theme-toggle" aria-label="Cambiar a modo oscuro" title="Cambiar a modo oscuro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.4 14.2A8.5 8.5 0 0 1 9.8 3.6a8.5 8.5 0 1 0 10.6 10.6Z"></path></svg></button><a class="nav-cta" href="#contacto">Conversemos</a><button class="nav-burger " aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button></div></div></header><main><section class="hero" id="inicio"><div class="ambient ambient--tr" aria-hidden="true"></div><div class="container hero-grid"><div class="hero-content"><p class="eyebrow">Desarrollo de software · Inteligencia artificial aplicada</p><h1 class="hero-title">Ingeniería de software con <span class="accent">inteligencia</span> en el núcleo.</h1><p class="hero-sub">Diseñamos y construimos productos digitales a la medida — plataformas, integraciones y agentes de IA — que convierten procesos complejos en ventajas competitivas.</p><div class="hero-actions"><a class="btn-primary" href="#contacto">Iniciar conversación</a><a class="btn-ghost" href="#servicios">Explorar servicios</a></div></div><div class="hero-visual" aria-hidden="true"><!--$!--><template data-msg="Switched to client rendering because the server rendering aborted due to:
+
+The server used &quot;renderToString&quot; which does not support Suspense. If you intended for this Suspense boundary to render the fallback content on the server consider throwing an Error somewhere within the Suspense boundary. If you intended to have the server wait for the suspended component please switch to &quot;renderToPipeableStream&quot; which supports Suspense on the server" data-cstck="
+    at Lazy (&lt;anonymous&gt;)
+    at Suspense (&lt;anonymous&gt;)
+    at div (&lt;anonymous&gt;)
+    at div (&lt;anonymous&gt;)
+    at section (&lt;anonymous&gt;)
+    at Hero (file:///home/runner/work/website/website/dist-ssr/entry-server.js:524:16)
+    at main (&lt;anonymous&gt;)
+    at div (&lt;anonymous&gt;)
+    at I18nProvider (file:///home/runner/work/website/website/dist-ssr/entry-server.js:312:25)
+    at ThemeProvider (file:///home/runner/work/website/website/dist-ssr/entry-server.js:343:26)
+    at App (&lt;anonymous&gt;)"></template><!--/$--></div></div><div class="hero-scroll-hint" aria-hidden="true">Descubra más</div></section><section class="clients" id="clientes"><div class="container"><div class="clients-head"><p class="eyebrow">Confían en nosotros</p></div><div class="clients-grid"><div class="reveal client-card"><img src="clients/BAC.svg" alt="BAC" loading="lazy"/></div><div class="reveal client-card" style="transition-delay:90ms"><img src="clients/cuestamoras.png" alt="Cuestamoras" loading="lazy" class="client-logo--tall"/></div><div class="reveal client-card" style="transition-delay:180ms"><img src="clients/teledolar.png" alt="TeleDólar" loading="lazy"/></div><div class="reveal client-card" style="transition-delay:270ms"><img src="clients/credid.png" alt="Credid" loading="lazy" class="client-logo--tall"/></div></div></div></section><section class="section" id="servicios"><div class="ambient ambient--bl" aria-hidden="true"></div><div class="container"><div class="reveal "><p class="eyebrow">Servicios</p><h2 class="section-title">Soluciones completas, del concepto a producción.</h2><p class="section-intro">Acompañamos a cada cliente en todo el ciclo de vida del software: desde la definición estratégica hasta la operación diaria, con equipos que se adaptan a su realidad.</p></div><div class="services-grid"><article class="reveal service-card"><div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6"></path><path d="m16 6 6 6-6 6"></path></svg></div><h3>Desarrollo de software a medida</h3><p>Plataformas web, móviles y sistemas empresariales diseñados alrededor de sus procesos, no al revés. Arquitecturas escalables, seguras y listas para crecer con su negocio.</p></article><article class="reveal service-card" style="transition-delay:80ms"><div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"></circle><path d="M2.8 20c.8-3.2 3.2-5 6.2-5s5.4 1.8 6.2 5"></path><circle cx="17.5" cy="9.5" r="2.4"></circle><path d="M15.5 14.6c2.6.2 4.7 1.7 5.5 4.4"></path></svg></div><h3>Células de desarrollo dedicadas</h3><p>Talento senior que se integra a sus equipos con la metodología, el ritmo y las herramientas de su organización. Capacidad inmediata sin fricción de contratación.</p></article><article class="reveal service-card" style="transition-delay:160ms"><div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="m15.5 8.5-2 5-5 2 2-5z"></path></svg></div><h3>Consultoría en tecnología</h3><p>Definimos con usted la arquitectura, el stack y la hoja de ruta tecnológica correctos para su operación, con decisiones fundamentadas en datos y experiencia real.</p></article><article class="reveal service-card" style="transition-delay:240ms"><div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v5c0 4.8 3.2 8.4 7.5 10 4.3-1.6 7.5-5.2 7.5-10V6z"></path><path d="m9 12 2 2 4-4.5"></path></svg></div><h3>Evolución y soporte continuo</h3><p>Mantenimiento proactivo, monitoreo y mejora constante de sus sistemas. Su software siempre actualizado, seguro y funcionando al máximo rendimiento.</p></article></div></div></section><section class="section ai-section" id="ia"><div class="ai-accent" aria-hidden="true"><!--$!--><template data-msg="Switched to client rendering because the server rendering aborted due to:
+
+The server used &quot;renderToString&quot; which does not support Suspense. If you intended for this Suspense boundary to render the fallback content on the server consider throwing an Error somewhere within the Suspense boundary. If you intended to have the server wait for the suspended component please switch to &quot;renderToPipeableStream&quot; which supports Suspense on the server" data-cstck="
+    at Lazy (&lt;anonymous&gt;)
+    at Suspense (&lt;anonymous&gt;)
+    at div (&lt;anonymous&gt;)
+    at section (&lt;anonymous&gt;)
+    at AISection (file:///home/runner/work/website/website/dist-ssr/entry-server.js:770:16)
+    at main (&lt;anonymous&gt;)
+    at div (&lt;anonymous&gt;)
+    at I18nProvider (file:///home/runner/work/website/website/dist-ssr/entry-server.js:312:25)
+    at ThemeProvider (file:///home/runner/work/website/website/dist-ssr/entry-server.js:343:26)
+    at App (&lt;anonymous&gt;)"></template><!--/$--></div><div class="container"><div class="reveal "><p class="eyebrow">Enfoque IA</p></div><div class="ai-grid"><div class="reveal "><h2 class="section-title">La inteligencia artificial no es un módulo más: es nuestra forma de construir.</h2><p class="ai-lede">Integramos modelos de lenguaje y aprendizaje automático directamente en los flujos de trabajo de su empresa, de forma segura y medible. El resultado: operaciones más rápidas, decisiones mejor informadas y equipos enfocados en lo que genera valor.</p></div><div class="ai-items"><div class="reveal ai-item"><span class="ai-item-num" aria-hidden="true">01</span><div><h3>Automatización inteligente</h3><p>Procesos operativos que se ejecutan solos: clasificación de documentos, gestión de solicitudes, flujos de aprobación y tareas repetitivas que dejan de consumir horas de su equipo.</p></div></div><div class="reveal ai-item" style="transition-delay:100ms"><span class="ai-item-num" aria-hidden="true">02</span><div><h3>Agentes y copilotos empresariales</h3><p>Asistentes conectados a sus datos y sistemas que responden, resuelven y ejecutan con el contexto de su negocio, disponibles para su equipo y sus clientes.</p></div></div><div class="reveal ai-item" style="transition-delay:200ms"><span class="ai-item-num" aria-hidden="true">03</span><div><h3>Analítica y decisiones con datos</h3><p>Modelos predictivos y tableros inteligentes que anticipan la demanda, detectan riesgos y revelan oportunidades antes que la competencia.</p></div></div></div></div></div></section><section class="section" id="proceso"><div class="container"><div class="reveal "><p class="eyebrow">Cómo trabajamos</p><h2 class="section-title">Un método probado, sin sorpresas.</h2></div><div class="process-grid"><div class="reveal process-step"><span class="process-num">FASE<!-- --> <!-- -->01</span><h3>Descubrimiento</h3><p>Entendemos su negocio, sus procesos y el problema real a resolver antes de escribir una sola línea de código.</p></div><div class="reveal process-step" style="transition-delay:110ms"><span class="process-num">FASE<!-- --> <!-- -->02</span><h3>Diseño de solución</h3><p>Definimos alcance, arquitectura y experiencia de usuario con prototipos que validan la dirección desde el inicio.</p></div><div class="reveal process-step" style="transition-delay:220ms"><span class="process-num">FASE<!-- --> <!-- -->03</span><h3>Construcción iterativa</h3><p>Entregas frecuentes y demostrables. Usted ve el avance real en cada iteración y ajustamos sobre la marcha.</p></div><div class="reveal process-step" style="transition-delay:330ms"><span class="process-num">FASE<!-- --> <!-- -->04</span><h3>Evolución continua</h3><p>Puesta en producción, monitoreo y mejora constante. El lanzamiento es el inicio, no el final.</p></div></div></div></section><section class="section stats" id="cifras"><div class="container"><div class="reveal "><p class="eyebrow">Resultados</p><h2 class="section-title">Cifras que respaldan nuestro trabajo.</h2></div><div class="stats-grid"><div class="reveal "><div class="stat-value">+25%</div><p class="stat-label">de productividad en los equipos que adoptan nuestras soluciones</p></div><div class="reveal " style="transition-delay:100ms"><div class="stat-value">−15%</div><p class="stat-label">de costos operativos gracias a la automatización de procesos</p></div><div class="reveal " style="transition-delay:200ms"><div class="stat-value">40%</div><p class="stat-label">menos tiempo de implementación frente al promedio del mercado</p></div><div class="reveal " style="transition-delay:300ms"><div class="stat-value">+20%</div><p class="stat-label">de crecimiento promedio en las ventas de nuestros clientes, impulsado por nuestras soluciones</p></div></div></div></section><section class="section" id="nosotros"><div class="ambient ambient--tr" aria-hidden="true"></div><div class="container"><div class="reveal "><p class="eyebrow">Nosotros</p></div><div class="about-grid"><div class="reveal about-body"><h2 class="section-title">Un socio tecnológico, no un proveedor más.</h2><p>Kabata Soft nació con una convicción: la tecnología solo vale si transforma la manera en que una empresa opera. Por eso cada solución que construimos parte de entender a fondo el negocio de nuestros clientes — sus procesos, sus números y sus metas.</p><p>Somos un equipo multidisciplinario de ingenieros de software, especialistas en inteligencia artificial y diseñadores que trabajan como una extensión de su organización. Desde startups hasta corporaciones financieras, nos hemos ganado la confianza de nuestros clientes entregando con calidad, puntualidad y transparencia.</p></div><div class="values-list"><div class="reveal value-item"><h3>Precisión</h3><p>Calidad en cada línea de código, con estándares de ingeniería que garantizan software confiable y mantenible.</p></div><div class="reveal value-item" style="transition-delay:100ms"><h3>Transparencia</h3><p>Comunicación directa, avances visibles y compromisos que se cumplen. Sin sorpresas.</p></div><div class="reveal value-item" style="transition-delay:200ms"><h3>Innovación continua</h3><p>Adoptamos las tecnologías que marcan la diferencia — no las modas — y las aplicamos donde generan valor real.</p></div></div></div></div></section><section class="section contact" id="contacto"><div class="ambient ambient--bl" aria-hidden="true"></div><div class="container"><div class="contact-grid"><div class="reveal contact-info"><p class="eyebrow">Contacto</p><h2 class="section-title">Conversemos sobre su próximo proyecto.</h2><p>Cuéntenos qué desafío tiene entre manos. Le responderemos con una propuesta clara de cómo podemos ayudarle.</p><p class="form-note" style="margin-bottom:10px">Escríbanos directamente:</p><a class="contact-email" href="mailto:contacto@kabatasoft.com">contacto@kabatasoft.com</a></div><div class="reveal " style="transition-delay:120ms"><form class="contact-form"><div class="form-row"><input type="text" placeholder="Nombre" required="" name="name" value=""/><input type="email" placeholder="Correo electrónico" required="" name="email" value=""/></div><input type="text" placeholder="Empresa" name="company" value=""/><textarea name="message" placeholder="¿En qué podemos ayudarle?" required=""></textarea><div><button type="submit" class="btn-primary">Enviar mensaje</button></div></form></div></div></div></section></main><footer class="footer"><div class="container"><div class="footer-inner"><div><a href="#inicio" class="logo" aria-label="Kabata Soft — Inicio"><img class="logo-mtn" src="logo-mountains.png" alt=""/><svg class="logo-svg" viewBox="252 46 388 111" role="img" aria-label="KB Soft"><text x="262" y="155" font-family="&#x27;Archivo&#x27;, &#x27;Instrument Sans&#x27;, sans-serif" font-weight="900" font-size="148" letter-spacing="-4" fill="var(--logo-ink, #141414)">KB</text><text x="508" y="155" font-family="&#x27;Archivo&#x27;, &#x27;Instrument Sans&#x27;, sans-serif" font-weight="800" font-size="54" fill="#c1281e">Soft</text></svg></a><p class="footer-meta" style="margin-top:14px;max-width:340px">Software e inteligencia artificial para empresas que quieren ir más lejos.</p></div><div><ul class="footer-links"><li><a href="#servicios">Servicios</a></li><li><a href="#ia">Enfoque IA</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#contacto">Contacto</a></li></ul><p class="footer-meta" style="margin-top:14px;text-align:right">© <!-- -->2026<!-- --> <!-- -->Kabata Soft S.A. Todos los derechos reservados.</p></div></div></div></footer></div></div>
   </body>
 </html>

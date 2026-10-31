@@ -1,0 +1,11 @@
+# Kabata Soft
+
+> Empresa de desarrollo de software e inteligencia artificial aplicada (Kabata Soft S.A.): software a medida, células de desarrollo dedicadas, consultoría en tecnología, evolución y soporte continuo, y agentes de IA integrados en los flujos de trabajo de la empresa. Contacto: contacto@kabatasoft.com.
+
+## Sitio
+
+- [Kabata Soft](https://www.kabatasoft.com/): servicios, enfoque de IA, cómo trabajamos, nosotros y contacto. En español y en inglés.
+
+## Productos
+
+- [kbspec](https://kbspec.kabatasoft.com/): framework de desarrollo con IA de Kabata Soft — un expediente trazable por requerimiento, ocho fases, aprobaciones de la persona y medición del costo de la IA. Su documentación para asistentes: https://kbspec.kabatasoft.com/llms.txt
