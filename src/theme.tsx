@@ -13,6 +13,7 @@ const ThemeContext = createContext<ThemeContextValue | null>(null)
 const STORAGE_KEY = 'kabata-theme'
 
 function initialTheme(): Theme {
+  if (typeof window === 'undefined') return 'light'
   // el modo claro es el predeterminado; el oscuro solo si el usuario lo eligió
   return localStorage.getItem(STORAGE_KEY) === 'dark' ? 'dark' : 'light'
 }

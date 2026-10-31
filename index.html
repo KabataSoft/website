@@ -18,7 +18,7 @@
       name="description"
       content="Kabata Soft: desarrollo de software a medida, inteligencia artificial aplicada, células de desarrollo dedicadas y consultoría tecnológica. Transformamos procesos complejos en ventajas competitivas."
     />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
     <meta name="author" content="Kabata Soft S.A." />
     <link rel="canonical" href="https://www.kabatasoft.com/" />
 
@@ -46,25 +46,115 @@
     />
     <meta name="twitter:image" content="https://www.kabatasoft.com/og-image.png" />
 
-    <!-- Datos estructurados para Google -->
+    <!-- Datos estructurados: la organización (el mismo @id que usa kbspec.kabatasoft.com),
+         el sitio y los servicios que la página describe. -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Kabata Soft",
-        "legalName": "Kabata Soft S.A.",
-        "url": "https://www.kabatasoft.com/",
-        "logo": "https://www.kabatasoft.com/og-image.png",
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.kabatasoft.com/#org",
+      "name": "Kabata Soft",
+      "legalName": "Kabata Soft S.A.",
+      "url": "https://www.kabatasoft.com/",
+      "logo": "https://www.kabatasoft.com/logo-mountains.png",
+      "image": "https://www.kabatasoft.com/og-image.png",
+      "email": "contacto@kabatasoft.com",
+      "description": "Desarrollo de software a medida, inteligencia artificial aplicada, células de desarrollo dedicadas y consultoría tecnológica.",
+      "contactPoint": {
+        "@type": "ContactPoint",
         "email": "contacto@kabatasoft.com",
-        "description": "Desarrollo de software a medida, inteligencia artificial aplicada, células de desarrollo dedicadas y consultoría tecnológica.",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "email": "contacto@kabatasoft.com",
-          "contactType": "sales",
-          "availableLanguage": ["es", "en"]
+        "contactType": "sales",
+        "availableLanguage": [
+          "es",
+          "en"
+        ]
+      },
+      "knowsAbout": [
+        "Desarrollo de software",
+        "Inteligencia artificial",
+        "Agentes de IA",
+        "Automatización de procesos",
+        "Consultoría tecnológica"
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Desarrollo de software a medida",
+            "description": "Plataformas web, móviles y sistemas empresariales diseñados alrededor de los procesos del cliente.",
+            "provider": {
+              "@id": "https://www.kabatasoft.com/#org"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Células de desarrollo dedicadas",
+            "description": "Talento senior que se integra a los equipos del cliente con su metodología y sus herramientas.",
+            "provider": {
+              "@id": "https://www.kabatasoft.com/#org"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Consultoría en tecnología",
+            "description": "Arquitectura, stack y hoja de ruta tecnológica para la operación del cliente.",
+            "provider": {
+              "@id": "https://www.kabatasoft.com/#org"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Evolución y soporte continuo",
+            "description": "Mantenimiento proactivo, monitoreo y mejora constante de los sistemas.",
+            "provider": {
+              "@id": "https://www.kabatasoft.com/#org"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Inteligencia artificial aplicada",
+            "description": "Automatización inteligente, agentes y copilotos empresariales, y analítica con datos, integrados en los flujos de trabajo de la empresa.",
+            "provider": {
+              "@id": "https://www.kabatasoft.com/#org"
+            }
+          }
         }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.kabatasoft.com/#sitio",
+      "name": "Kabata Soft",
+      "url": "https://www.kabatasoft.com/",
+      "inLanguage": [
+        "es",
+        "en"
+      ],
+      "publisher": {
+        "@id": "https://www.kabatasoft.com/#org"
       }
+    }
+  ]
+}
     </script>
+    <!-- Sin JavaScript, las secciones animadas se ven igual (no hay texto escondido). -->
+    <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+    <link rel="alternate" type="text/plain" href="https://www.kabatasoft.com/llms.txt" title="llms.txt" />
     <!-- Google Analytics (mismo ID que el sitio en producción) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PWDP1CCRL4"></script>
     <script>

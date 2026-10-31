@@ -14,6 +14,8 @@ const I18nContext = createContext<I18nContextValue | null>(null)
 const STORAGE_KEY = 'kabata-lang'
 
 function initialLang(): Lang {
+  // Sin navegador —el prerenderizado del build—, español: es el idioma de la página.
+  if (typeof window === 'undefined') return 'es'
   const stored = localStorage.getItem(STORAGE_KEY)
   if (stored === 'es' || stored === 'en') return stored
   return navigator.language.startsWith('en') ? 'en' : 'es'
